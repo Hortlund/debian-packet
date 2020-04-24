@@ -1,0 +1,45 @@
+Description: <short summary of the patch>
+ TODO: Put a short summary on the line above and replace this paragraph
+ with a longer explanation of this change. Complete the meta-information
+ with other relevant fields (see below for details). To make it easier, the
+ information below has been extracted from the changelog. Adjust it or drop
+ it.
+ .
+ debianpkt (0.0-1) UNRELEASED; urgency=low
+ .
+   * Initial release. Closes: #3
+Author: Andreas <hortlund.andreas@gmail.com>
+Bug-Debian: https://bugs.debian.org/3
+
+---
+The information above should follow the Patch Tagging Guidelines, please
+checkout http://dep.debian.net/deps/dep3/ to learn about the format. Here
+are templates for supplementary fields that you might want to add:
+
+Origin: <vendor|upstream|other>, <url of original patch>
+Bug: <url in upstream bugtracker>
+Bug-Debian: https://bugs.debian.org/<bugnumber>
+Bug-Ubuntu: https://launchpad.net/bugs/<bugnumber>
+Forwarded: <no|not-needed|url proving that it has been forwarded>
+Reviewed-By: <name and email of someone who approved the patch>
+Last-Update: 2020-03-09
+
+--- debianpkt-0.0.orig/makefile
++++ debianpkt-0.0/makefile
+@@ -10,7 +10,7 @@ src/electrotest-standalone: src/main.c
+ 
+ install: src/electrotest-standalone
+ 	install -D src/electrotest-standalone \
+-                $(DESTDIR)$(prefix)/bin/electrotest-standalone
++                $(prefix)/bin/electrotest-standalone
+ 
+ clean:
+ 	-rm -f src/electrotest-standalone
+@@ -18,6 +18,6 @@ clean:
+ distclean: clean
+ 
+ uninstall:
+-	-rm -f $(DESTDIR)$(prefix)/bin/electrotest-standalone
++	-rm -f $(prefix)/bin/electrotest-standalone
+ 
+ .PHONY: all install clean distclean uninstall

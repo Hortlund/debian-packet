@@ -1,0 +1,12 @@
+Package: debianpkt-dbgsym
+Source: debianpkt
+Version: 0.0-1
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: Andreas <hortlund.andreas@gmail.com>
+Installed-Size: 21
+Depends: debianpkt (= 0.0-1)
+Section: debug
+Priority: optional
+Description: debug symbols for debianpkt
+Build-Ids: b3afdf08ea3b39fcc2528eeddeecc62c32b212ac

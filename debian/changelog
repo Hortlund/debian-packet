@@ -1,0 +1,5 @@
+debianpkt (0.0-1) UNRELEASED; urgency=low
+
+  * Initial release. Closes: #3
+
+ -- Andreas <hortlund.andreas@gmail.com>  Mon, 09 Mar 2020 17:38:51 +0100
